@@ -1,0 +1,16 @@
+# Unreal Engine generated folders
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# IDE folders
+.vs/
+
+# Visual Studio user files
+*.suo
+*.user
+*.userprefs
+*.sln
+
+# Temporary files
+*.tmp
