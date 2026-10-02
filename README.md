@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/32971198/README.md)[Uploading # UE5 First Person Gameplay
+# UE5 First Person Gameplay
 
 ### Junior Unreal Engine 5 Gameplay Portfolio Project
 
@@ -14,7 +14,9 @@ The project was built progressively, with each section introducing and implement
 
 A small playable first-person scenario combining multiple Blueprint gameplay systems developed throughout the project.
 
-The prototype demonstrates player movement, interactive gameplay elements, obstacles, health feedback and a playable level flow.
+The prototype demonstrates player movement, interactive gameplay elements, obstacles, health feedback, checkpoints, respawning and a playable level flow.
+
+![Mini Gameplay Screenshot](Media/mini-gameplay.png)
 
 ---
 
@@ -55,22 +57,24 @@ The project was developed as a learning and portfolio project to build practical
 
 # 📂 Project Structure
 
+The repository contains the Unreal Engine project files, while the gameplay systems were developed progressively through the following modules:
+
 ```text
-Portfolio/
-│
-├── 01_MovingPlatform/
-├── 02_AutomaticDoor/
-├── 03_PickupObject/
-├── 04_ButtonDoor/
-├── 05_Elevator/
-├── 06_HealthSystem/
-├── 07_SimpleEnemy/
-├── 08_InteractionSystem/
-├── 09_Simple_Enemy_Patrol/
-├── 10_MiniGameplay/
-├── 11_Checkpoint_Respawn/
-└── 12_Health_HUD/
+01_MovingPlatform
+02_AutomaticDoor
+03_PickupObject
+04_ButtonDoor
+05_Elevator
+06_HealthSystem
+07_SimpleEnemy
+08_InteractionSystem
+09_Simple_Enemy_Patrol
+10_MiniGameplay
+11_Checkpoint_Respawn
+12_Health_HUD
 ```
+
+The final `10_MiniGameplay` level brings several of these systems together into one playable scenario.
 
 ---
 
@@ -156,6 +160,8 @@ The button stores a reference to the target door and triggers its custom `OpenDo
 - Rotation
 - Gameplay interaction
 
+![Blueprint Communication](Media/blueprint-communication.png)
+
 ---
 
 ## 05 — Elevator
@@ -213,6 +219,8 @@ Health State Check
 - Branch conditions
 - Gameplay state checks
 - Health management
+
+![Health and Damage Blueprint](Media/health-damage.png)
 
 ---
 
@@ -347,6 +355,8 @@ The player character contains respawn functionality that uses the stored checkpo
 - Health Reset
 - Blueprint Communication
 
+![Checkpoint and Respawn](Media/checkpoint-respawn.png)
+
 ---
 
 # 🖥️ 12 — Health HUD
@@ -371,6 +381,10 @@ HEALTH: 100 / 100
 - Blueprint Casting
 - Widget creation
 - Viewport integration
+
+![Health HUD](Media/health-hud.png)
+
+![Health HUD Blueprint](Media/health-hud-blueprint.png)
 
 ---
 
@@ -450,9 +464,7 @@ Through the development process, I gained practical experience with:
 
 # 📸 Media
 
-The `Media/` directory contains the current gameplay showcase assets.
-
-Additional technical Blueprint screenshots can be added here:
+The `Media/` directory contains the gameplay showcase and technical screenshots for the project.
 
 ```text
 Media/
@@ -464,6 +476,18 @@ Media/
 ├── health-hud.png
 └── health-hud-blueprint.png
 ```
+
+### Media Overview
+
+| Asset | Purpose |
+|---|---|
+| `mini-gameplay.gif` | Gameplay showcase |
+| `mini-gameplay.png` | Final Mini Gameplay screenshot |
+| `health-damage.png` | Health and damage Blueprint |
+| `blueprint-communication.png` | Blueprint Actor communication |
+| `checkpoint-respawn.png` | Checkpoint and respawn system |
+| `health-hud.png` | Health HUD / UMG result |
+| `health-hud-blueprint.png` | Health HUD Blueprint implementation |
 
 ---
 
@@ -521,4 +545,3 @@ Junior Unreal Engine / Gameplay Developer
 ## 📄 License
 
 This project is a personal learning and portfolio project.
-README.md…]()
